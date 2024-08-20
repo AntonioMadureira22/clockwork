@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './CountdownClock.css'; // Import the CSS file
 
-// CountdownClock component
 const CountdownClock = ({ targetDate }) => {
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -28,13 +28,25 @@ const CountdownClock = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div style={{ textAlign: 'center', fontSize: '24px' }}>
+    <div className="countdown-clock">
       <h1>Countdown Clock</h1>
-      <div>
-        <span>{timeLeft.days} Days </span>
-        <span>{timeLeft.hours} Hours </span>
-        <span>{timeLeft.minutes} Minutes </span>
-        <span>{timeLeft.seconds} Seconds </span>
+      <div className="time-container">
+        <div className="time-unit">
+          <span className="time-number">{timeLeft.days}</span>
+          <span className="time-label">Days</span>
+        </div>
+        <div className="time-unit">
+          <span className="time-number">{timeLeft.hours}</span>
+          <span className="time-label">Hours</span>
+        </div>
+        <div className="time-unit">
+          <span className="time-number">{timeLeft.minutes}</span>
+          <span className="time-label">Minutes</span>
+        </div>
+        <div className="time-unit">
+          <span className="time-number">{timeLeft.seconds}</span>
+          <span className="time-label">Seconds</span>
+        </div>
       </div>
     </div>
   );
