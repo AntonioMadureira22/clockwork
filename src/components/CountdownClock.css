@@ -1,9 +1,8 @@
 /* CountdownClock.css */
-
 body {
     margin: 0;
     padding: 0;
-    background: gray;
+    background: #d3d3d3; /* Lighter grey background for the entire page */
     font-family: 'Orbitron', sans-serif; /* A futuristic font */
   }
   
@@ -20,12 +19,41 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 255, 153, 0.1); /* Slightly transparent background for the countdown */
+    background: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background for the countdown */
+  }
+  
+  .countdown-clock.light {
+    background: rgba(255, 255, 255, 0.8); /* Lighter background for light theme */
+    color: #000; /* Dark text color for light theme */
   }
   
   h1 {
     font-size: 3em;
     margin-bottom: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="datetime-local"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #00ff99;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #00cc80;
   }
   
   .time-container {
@@ -52,50 +80,6 @@ body {
     font-size: 1em;
     letter-spacing: 1px;
   }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-  
-/* .countdown-clock {
-    font-family: 'Orbitron', sans-serif; /* A futuristic font 
-    background: linear-gradient(45deg, #1e2a38, #0a0f15);
-    color: #00ff99;
-    text-align: center;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
-    width: 80%;
-    margin: auto;
-  }
-  
-  h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
-  
-  .time-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .time-unit {
-    background: rgba(0, 255, 153, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    width: 80px;
-    box-shadow: 0 0 10px rgba(0, 255, 153, 0.5);
-  }
-  
-  .time-number {
-    display: block;
-    font-size: 2.5em;
-  }
-  
-  .time-label {
-    display: block;
-    font-size: 1em;
-    letter-spacing: 1px;
-  }*/
   
   @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
   
