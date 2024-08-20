@@ -1,89 +1,88 @@
 /* CountdownClock.css */
 body {
-    margin: 0;
-    padding: 0;
-    background: #1a1a1a; /* Darker grey background for the entire page */
-    font-family: 'Orbitron', sans-serif; /* Futuristic font */
-  }
-  
-  .countdown-clock {
-    color: #ff5722; /* Bright orange text color for doomsday effect */
-    text-align: center;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 87, 34, 0.8); /* Glowing effect */
-    width: 80%;
-    max-width: 600px; /* Adjust as needed */
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.9); /* Darker semi-transparent background for the countdown */
-  }
-  
-  .countdown-clock.light {
-    background: rgba(255, 255, 255, 0.8); /* Lighter background for light theme */
-    color: #ff5722; /* Maintain bright orange text color for light theme */
-  }
-  
-  h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: #ff5722; /* Bright orange text color */
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  input[type="datetime-local"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #555; /* Darker border for better contrast */
-    background-color: #333; /* Darker background for input */
-    color: #fff; /* White text color for input */
-  }
-  
-  button {
-    background-color: #ff5722; /* Bright orange */
-    color: #fff; /* White text color */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-  }
-  
-  button:hover {
-    background-color: #e64a19; /* Slightly darker orange on hover */
-  }
-  
-  .time-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .time-unit {
-    background: rgba(255, 87, 34, 0.3); /* Lighter orange for time units */
-    border-radius: 10px;
-    padding: 20px;
-    width: 80px;
-    box-shadow: 0 0 10px rgba(255, 87, 34, 0.8); /* Glowing effect */
-  }
-  
-  .time-number {
-    display: block;
-    font-size: 2.5em;
-  }
-  
-  .time-label {
-    display: block;
-    font-size: 1em;
-    letter-spacing: 1px;
-  }
-  
-  /* Importing Google Fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-  
+  margin: 0;
+  padding: 0;
+  background: #1a1a1a; /* Darker grey background for the entire page */
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+.countdown-clock {
+  color: 	#00CED1; /* Bright orange text color for doomsday effect */
+  text-align: center;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00FFFF; /* Glowing effect */
+  width: 80%;
+  max-width: 600px; /* Adjust as needed */
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9); /* Darker semi-transparent background for the countdown */
+}
+
+.countdown-clock.light {
+  background: rgba(255, 255, 255, 0.8); /* Lighter background for light theme */
+  color: #00FFFF; /* Maintain bright orange text color for light theme */
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #00FFFF; /* Bright orange text color */
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="datetime-local"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #555; /* Darker border for better contrast */
+  background-color: #333; /* Darker background for input */
+  color: #fff; /* White text color for input */
+}
+
+button {
+  background-color: #00FFFF; /* Bright orange */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #48D1CC; /* Slightly darker orange on hover */
+}
+
+.time-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time-unit {
+  background: #E0FFFF; /* Lighter orange for time units */
+  border-radius: 10px;
+  padding: 20px;
+  width: 80px;
+  box-shadow: 0 0 10px #48D1CC; /* Glowing effect */
+}
+
+.time-number {
+  display: block;
+  font-size: 2.5em;
+}
+
+.time-label {
+  display: block;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
